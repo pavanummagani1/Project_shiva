@@ -1,0 +1,865 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* body{
+    overflow-x: hidden;
+} */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgb(249, 232, 249);
+    font-family: "Montserrat", sans-serif;
+}
+
+.container-2 {
+    position: relative;
+    padding: 1.2em;
+    display: flex;
+    gap: 50px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.text:hover {
+    color: lightsalmon;
+}
+
+.text-icon {
+    display: none;
+}
+
+#checkbox+.dropdown {
+    display: none;
+}
+
+#checkbox:checked+.dropdown {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 500;
+    gap: 10px;
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 5px 5px 3px #000;
+    position: absolute;
+    top: 70px;
+    left: 110px;
+    z-index: 1;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.dropdown>span:hover {
+    color: red;
+    background-color: lightpink;
+}
+
+#checkbox {
+    display: none;
+}
+
+
+
+/*.....................item-1..................*/
+
+
+.item-1 {
+    /* width: 100vh; */
+    height: 650px;
+    background-image: url(./Images/slider-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.div-1 {
+    position: absolute;
+    font-family: serif;
+    top: 100px;
+    left: 200px;
+}
+
+.div-1-heading {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: left;
+}
+
+.div-1-pera {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 24px;
+    margin-top: 20px;
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.div-1-shop-now-btn {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 12px 50px;
+    margin-top: 10px;
+    background-color: rgb(245, 47, 47);
+    color: white;
+    transition: 1s;
+}
+
+.div-1-shop-now-btn:hover {
+    background-color: #ccc;
+    color: rgb(245, 47, 47);
+}
+
+
+/*....................item-2..........................*/
+
+.div-2 {
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    gap: 23px;
+
+}
+
+.why-shop {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    font-size: 60px;
+    font-weight: 900;
+    font-family: "Playfair", serif;
+}
+
+.delivery {
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    width: 370px;
+    background-color: rgb(11, 11, 79);
+    border: 2px solid;
+    color: white;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+
+.delivery-icon {
+    font-size: 3rem;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-left: 42%;
+}
+
+h3 {
+    font-size: 21px;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+
+/*....................item-3......................*/
+
+
+.item-3 {
+    /* width: 100vw; */
+    height: 620px;
+    background-image: url(./Images/arrival-bg.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.div-3 {
+    position: absolute;
+    left: 750px;
+    top: 200px;
+    font-family: "Montserrat", sans-serif;
+    text-align: start;
+    margin: 10px;
+}
+
+.div-3-new {
+    font-size: 3.5rem;
+    font-weight: 650;
+    margin-top: 20px;
+}
+
+.div-3-shop-btn {
+    font-size: 1.2rem;
+    background-color: red;
+    color: wheat;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+
+/*...........................item-4......................*/
+
+
+
+.our-products {
+    font-size: 3.5rem;
+    font-weight: 600;
+    padding: 80px;
+    text-align: center;
+
+}
+
+.grid-container {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 20px 0px;
+    /* padding-left: 200px; */
+
+}
+
+.grid-container>span.one {
+    background-color: rgb(221, 244, 249);
+}
+
+.one {
+    width: 360px;
+    height: 390px;
+    display: block;
+    display: grid;
+    flex-direction: column;
+    text-align: center;
+}
+
+.one>img {
+    width: 320px;
+    height: 320px;
+    padding: 70px;
+}
+
+.grid-container-products {
+    border: 2px solid red;
+    display: flex;
+    padding: 13px 50px;
+    background-color: red;
+    border-radius: 5px;
+    position: absolute;
+    top: 1700px;
+    cursor: pointer;
+}
+
+.grid-container-products:hover {
+    
+    background-color: white;
+}
+
+.one-hide {
+    display: none;
+    background-color: transparent;
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 10px;
+    color: red;
+    margin-top: -150px;
+    height: 100%;
+}
+
+.one-hide>.top-btn {
+    background-color: red;
+    border: 2px solid red;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: white;
+    transition: 1s;
+}
+
+.one-hide>.top-btn:hover {
+    background-color: transparent;
+    color: red;
+}
+
+
+.one-hide>.down-btn {
+    background-color: black;
+    border: 2px solid black;
+    padding: 10px 40px;
+    border-radius: 50px;
+    color: white;
+    transition: 1s;
+}
+
+.one-hide>.down-btn:hover {
+    background-color: transparent;
+    color: black;
+}
+
+
+.one:hover>.one-hide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 360px;
+    height: 390px;
+    margin-top: -380px;
+}
+
+
+/*............................item-5............................*/
+
+
+.div-5 {
+    margin-top: 200px;
+    background-color: #d4ced0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-5>h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 100px;
+}
+
+.div-5>p {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.div-5>input {
+    /* padding: 18px 260px; */
+    width: 50%;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    margin: 20px;
+}
+
+::placeholder {
+    padding: 10px;
+}
+
+.div-5>button {
+    border: 2px solid red;
+    width: 280px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: red;
+    margin: 50px;
+}
+
+.div-5>button:hover {
+    background-color: #d4ced0;
+
+}
+
+
+/*....................item-6..................*/
+
+.div-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 775px;
+    height: 321px;
+    margin-left: 25%;
+}
+
+.div-6>img {
+    display: block;
+    border-radius: 50%;
+}
+
+.div-6>h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    padding: 70px;
+}
+
+.div-6>h3 {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 8px;
+}
+
+.div-6>h4 {
+    opacity: 0.7;
+}
+
+.div-6>p {
+    font-size: 18px;
+    padding: 10px;
+    padding-bottom: 60px;
+}
+
+
+
+/*.................footer......................*/
+
+
+
+
+.div-7 {
+    display: flex;
+    background-color: #f6f3f3;
+    margin-top: 400px;
+    justify-content: space-evenly;
+    line-height: 12px;
+    padding: 75px;
+}
+
+.div-8>img {
+    display: block;
+    width: 210px;
+    height: 37px;
+}
+
+.div-8>p {
+    padding: 17px;
+    text-align: start;
+}
+
+.div-9>h2 {
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: 625;
+}
+
+.div-10>h2 {
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: 625;
+}
+
+.div-11>h2 {
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: 625;
+}
+
+.div-12 {
+    display: flex;
+    height: 45px;
+    width: 15vw;
+    border: 1px solid;
+}
+
+.div-12>.sub-input {
+    width: 70%;
+}
+
+.div-12>.sub-sub {
+    width: 30%;
+    background-color: red;
+}
+
+
+/* .............copy right........... */
+
+.copy-right {
+    height: 85px;
+    background: #2f2d2d;
+}
+
+.copy-right>p {
+    color: white;
+    margin: 0px;
+    line-height: 15px;
+    padding-top: 12px;
+}
+
+#checkboxHam {
+    display: none;
+}
+
+
+
+
+/*................. Media Quries.. <=650............ */
+
+
+
+
+
+@media screen and (max-width:650px) {
+    header {
+        position: relative;
+    }
+    .container-1{
+        padding: 0;
+        margin-left: 20px;
+    }
+
+    .container-2 {
+        display: none;
+        background-color: #eee;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 67px;
+        left: 0px;
+        width: 50vw;
+        z-index: 1;
+    }
+
+    .text-icon {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-right: 20px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #checkboxHam:checked+.container-2 {
+        display: flex;
+    }
+
+    /* <!--................ item-1............ --> */
+
+    .item-1 {
+        /* background-image: none; */
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .div-1 {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        margin-left: -150px;
+    }
+
+
+
+
+    /* <!-- ............item-2 ..............--> */
+
+    .div-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .why-shop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 45px;
+        padding-bottom: 120px;
+    }
+
+
+    /* <!-- .............item-3.............. --> */
+
+    .item-3 {
+        /* background-image: ;    */
+        margin: 150px 0px;
+    }
+
+    .div-3 {
+        /* margin-top: -130px; */
+        margin-left: -95vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    /* <!-- ...................item-4 .................--> */
+
+
+    .div-4 {
+        text-align: center;
+        margin-top: -55vh;
+    }
+
+    .div-4>.our-products {
+        font-size: 45px;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .grid-container-products {
+        align-items: center;
+        position: absolute;
+        top: 4950px;
+    }
+
+
+    /* <!--.................... item-5 ...............--> */
+
+
+    .div-5 {
+        display: flex;
+        width: 100vw;
+        height: 80vh;
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+
+    /* <!-- .................item-6..................... --> */
+
+    .div-6 {
+        display: flex;
+        height: 80vw;
+        width: 60vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-6>h1 {
+        font-size: 38px;
+        text-align: center;
+    }
+
+
+    /* FOOTER */
+    .div-7 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-8 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-11 {
+        text-align: center;
+    }
+
+    .div-12 {
+        width: 80vw;
+    }
+
+    .copy-right {
+        width: 100vw;
+        margin: 20px 0px 0px 0px;
+    }
+
+}
+
+
+
+/* ............media quries-2   650 to 9999............. */
+
+
+
+
+@media screen and (min-width:650px) and (max-width:999px) {
+    header {
+        position: relative;
+    }
+
+    .container-2 {
+        display: none;
+        background-color: #eee;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 67px;
+        left: 0px;
+        width: 50vw;
+        z-index: 1;
+    }
+    .text-icon {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-right: 20px;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #checkboxHam:checked+.container-2 {
+        display: flex;
+    }
+
+
+
+    /* .......item-1........... */
+    .div-1 {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        margin-left: -100px;
+    }
+    .div-1-heading{
+        font-size: 54px;
+        
+    }
+    .div-1-pera {
+        font-size: 14px;
+    }
+    .div-1-shop-now-btn {
+        font-size: 16px;
+        font-weight: 650;
+        line-height: 20px;
+        padding: 10px 45px;
+        margin-top: 10px;
+
+    }
+    
+
+
+/* ..........item-2............... */
+
+.div-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50vh;
+    padding: 80px;
+}
+
+.why-shop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 45px;
+    padding-bottom: 50px;
+}
+
+
+/* .............item-3.......... */
+
+
+.item-3 {
+    /* background-image: ; */
+    margin: 150px 0px;
+    /* place-items: center; */
+}
+
+.div-3 {
+    /* margin-top: -130px; */
+    margin-left: -55vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* .................item-4............ */
+
+
+.div-4 {
+    margin-top: -150px;
+}
+
+.div-4>.our-products {
+    font-size: 35px;
+}
+
+.grid-container { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 15px;
+}
+
+.grid-container-products {
+    position: absolute;
+    top: 2450px;
+    left: 40%;
+}
+
+
+.one {
+    width: 270px;
+    height: 380px;
+    display: block;
+    display: grid;
+    flex-direction: column;
+    text-align: center;
+}
+
+.one>img {
+    width: 250px;
+    height: 250px;
+    padding: 30px;
+}
+.one>h3{
+    font-size: 20px;
+}
+
+/* ............item-6......... */
+.div-6{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: 320px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.div-6>img{
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* ....... footer...........*/
+
+
+.div-7{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.div-12 {
+    width: 100%;
+}
+}
